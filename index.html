@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="RouteApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Route Routing</title>
+  </head>
+  <body>
+    <h1>Route Routing</h1>
+    <a ng-href="#!/route66">Route 66</a>
+    <a ng-href="#!/pacificCoast">Pacific Coast Highway</a>
+    <div ng-view>
+      <!-- this is where the content from the partials go -->
+    </div>
+    <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/highway1Ctrl.js"></script>
+    <script src="app/controllers/highway2Ctrl.js"></script>
+  </body>
+</html>
