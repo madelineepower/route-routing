@@ -4,6 +4,9 @@ var app = angular.module("RouteApp", ['ngRoute']);
 
 app.config(function($routeProvider){
   $routeProvider.
+  when('/', {
+    templateUrl: 'partials/home.html'
+  }).
   when('/route66', {
     templateUrl: 'partials/route66.html',
     controller: 'highway1Ctrl'
